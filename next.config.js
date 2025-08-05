@@ -14,6 +14,25 @@
 // export default nextConfig;
 
 
+// /** @type {import('next').NextConfig} */
+// const nextConfig = {
+//   eslint: {
+//     ignoreDuringBuilds: true,
+//   },
+//   typescript: {
+//     ignoreBuildErrors: true,
+//   },
+//   images: {
+//     unoptimized: true,
+//   },
+//   experimental: {
+//     appDir: true, // ✅ Enable App Router
+//   },
+// };
+
+// export default nextConfig;
+
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   eslint: {
@@ -26,9 +45,8 @@ const nextConfig = {
     unoptimized: true,
   },
   experimental: {
-    appDir: true, // ✅ Enable App Router
+    appDir: true,
   },
 };
 
-export default nextConfig;
-
+module.exports = nextConfig;
